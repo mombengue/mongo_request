@@ -1,0 +1,60 @@
+GET http://localhost:3030/participants
+
+###
+GET http://localhost:3030/participants/61ba01a4a4911a2e2d5e6953
+
+
+###
+POST http://localhost:3030/participants
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Mamadou NDIAYE",
+}
+
+###
+DELETE http://localhost:3030/participants/61bb5e06b893aa808eb603d7
+
+###
+PATCH http://localhost:3030/participants/61ba01a4a4911a2e2d5e6952
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Amadou MBENGUE",
+}
+
+
+
+
+GET http://localhost:3030/courses
+
+###
+GET http://localhost:3030/courses/61ba01a4a4911a2e2d5e694e
+
+###
+POST http://localhost:3030/courses
+Accept: application/json
+Content-Type: application/json
+
+{
+    "label": "Typescript",
+    "description": "Base de donnees NoSQL",
+    "volume": 45,
+    "starDate": "2021/15/12",
+}
+
+###
+DELETE http://localhost:3030/courses/61ba01a4a4911a2e2d5e694b
+
+###
+PATCH http://localhost:3030/courses/61ba01a4a4911a2e2d5e694b
+Accept: application/json
+Content-Type: application/json
+
+{
+    "label": "MongoDB",
+    "description": "NoSQL Database",
+    "volume": 50,
+}
