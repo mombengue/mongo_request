@@ -45,7 +45,7 @@ const setParticipant = async (req, res) => {
 /* Supprimer un participant */
 const removeParticipant = async (req, res) => {
     try {
-        const id = req.params.ids
+        const id = req.params.id
 
         await Participants.findOneAndDelete({"_id" : id});
 
